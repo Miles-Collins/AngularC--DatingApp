@@ -18,10 +18,10 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.http.get('https://localhost:5051/api/users').subscribe({
+    this.http.get('https://localhost:5151/api/users').subscribe({
       next: response => this.users = response,
       error: error => console.error(error),
-      complete: () => console.log('Request has completed.');
+      complete: () => console.log('Request has completed.')
 
     })
   }
