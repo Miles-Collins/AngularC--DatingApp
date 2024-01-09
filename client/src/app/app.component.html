@@ -1,1 +1,7 @@
-{{title}}
+<h1 class="text-danger">{{title}}</h1>
+
+<ul>
+  <li *ngFor="let user of users">
+    Id: {{user.id}} - User: {{user.userName}}
+  </li>
+</ul>
